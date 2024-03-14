@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="preload" as="image" href=".img/1.jpg">
+        <!-- Propojení s CSS a JS souborem-->
+        <link rel="stylesheet" href=".css/style.css"> 
+        <script type="module" src=".js/script.js" defer></script>
+        <script type="module" src=".js/register.js" defer></script> 
+    </head>
+
+    <body class="loginBody">
+        <header>
+            <h2 class="logo">LOGO</h2>
+            <nav class="navigation">
+                <a href="index.html" id="about">About</a>
+                <a href="myNotes.html" id="myNotes">My notes</a>
+                <a href="newNote.html" id="newNote">Create new note</a>
+                <button class="BTNLogin" id = "BTNLogOut">Logout</button>
+                <button class="BTNLogin" id = "BTNLogin">Login</button>
+            </nav>
+        </header>
+        <main>
+           <div class="wrapper_register">
+                <div class="form-box login">
+                    <h2>Register</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="text" id="emailInput" required>
+                            <label for="emailInput">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" id="passwordInput"required>
+                            <label for="passwordInput">Password</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" id="passwordAgainInput"required>
+                            <label for="passwordAgainInput">Password again</label>
+                        </div>
+                        <div class = "error" id = "errorBox">
+                            <p id= "error"></p>
+                        </div>
+                        <button type="submit" id ="submitRegister" class="BTN">Register</button>
+                        <div class="login-register">
+                            <p>Do you have an account? <a href="login.html">Log-in</a></p>
+                        </div>
+                    </form>
+                </div>
+           </div>
+        </main>
+        <footer class="logRegFooter">
+            <p>&copy;2024 Jan Makyda</p>
+        </footer>
+
+        
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

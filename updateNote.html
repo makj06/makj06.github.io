@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="preload" as="image" href=".img/1.jpg">
+        <!-- Propojení s CSS a JS souborem-->
+        <link rel="stylesheet" href=".css/style.css"> 
+        <script type="module" src=".js/script.js" defer></script>
+        <script type="module" src=".js/updateNotes.js" defer></script>
+    </head>
+
+    <body class="newNoteBody">
+        <header>
+            <h2 class="logo">LOGO</h2>
+            <nav class="navigation">
+                <a href="index.html" id="about">About</a>
+                <a href="myNotes.html" id="myNotes">My notes</a>
+                <a href="newNote.html" id="newNote">Create new note</a>
+                <button class="BTNLogin" id = "BTNLogOut">Logout</button>
+                <button class="BTNLogin" id = "BTNLogin">Login</button>
+            </nav>
+        </header>
+        <main>
+            <div class = "centerSection">
+                <div class ="section">
+                    <div class="h1Section">
+                        <h1>Update note</h1>
+                        <button id="goBTN">Back to notes</botton>
+                    </div>
+                    <p class="none" id="errorParagraph">Note was added succesfully</p>
+                </div>
+                
+                <form action="#">
+                    <div>
+                        <label for="titleInput">Title</label>
+                        <input id = "titleInput" required>
+                    </div>
+                    <div>
+                        <label>Text</label>
+                        <textarea id="textInput" required></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Update Note" class=" submit" id="BTNUpdate">
+                    </div>
+                </form>
+            </div>
+            
+        </main>
+        <footer>
+            <p>&copy;2024 Jan Makyda</p>
+        </footer>
+    </body>
+</html>
